@@ -1,10 +1,12 @@
 # CSS FRAMEWORKS Course Assignment
 
-## Goal
+## Assignment
+
+### Goal
 
 To apply knowledge of Bootstrap and SASS to build a responsive front end for a social media application.
 
-## Brief
+### Brief
 
 You are tasked with creating 3 pages in HTML using Bootstrap and SASS:
 
@@ -22,7 +24,7 @@ You will only be working on the visuals for this project at this stage; forms do
 
 Submission for this project will follow the pattern used in professional development. You are required to seek feedback from your peers as well as the teachers to complete this assignment.
 
-## Process:
+### Process:
 
 1. Create a design or wireframe for each page
 1. Create a new public repository on GitHub
@@ -38,7 +40,7 @@ Submission for this project will follow the pattern used in professional develop
 1. Share this Pull Request with a teacher for their approval
 1. Complete the approved Pull Request, or implement the required changes
 
-## Delivery
+### Delivery
 
 For peer review, please submit a link to your repository to the Moodle forum. You should review 2 of your peers’ submissions.
 
@@ -47,3 +49,19 @@ Please submit your public GitHub repository URL and any supplementary files, suc
 Design files will not be included in your grade but will help to provide additional context to the marker.
 
 Please make sure to exclude `node_modules` by using a `.gitignore` file.
+
+## Getting started
+
+1. Clone the repo `git clone https://github.com/joakimtveter/noroff-css-frameworks-ca.git`
+2. Install dependancies `npm install`
+
+### Run the project localy
+
+1. Start the project with `npm run dev`
+
+### Deploy the project
+
+1. Build the project with `npm run build`
+2. Craate a Pull request into the `main` branch
+
+Project auto deploys to TBD
