@@ -7,28 +7,58 @@
         <title>Login</title>
         <link rel="stylesheet" href="./css/styles.css" />
     </head>
-    <body class="text-center">
-        <main class="form-signin w-100 m-auto">
-            <form method="get" action="/profile.html">
-                <h1 class="h3 mb-3 fw-normal">Sign in</h1>
-                <div class="form-floating">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
-                    <label for="floatingInput">Email address</label>
-                </div>
-                <div class="form-floating">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password" />
-                    <label for="floatingPassword">Password</label>
-                </div>
+    <body class="bg-light d-flex align-items-center py-5">
+        <main class="form-signin m-auto w-100">
+            <div class="container">
+                <form method="get" action="/profile.html" class="requires-validation" novalidate>
+                    <h1 class="h3 mb-3 fw-normal text-center">Please sign in</h1>
+                    <div class="mb-1">
+                        <label for="email">Email address</label>
+                        <input
+                            type="email"
+                            class="form-control"
+                            id="email"
+                            placeholder="name@example.com"
+                            required="true"
+                        />
+                        <div class="invalid-feedback">Please enter a valid email</div>
+                    </div>
+                    <div class="mb-1">
+                        <label for="password">Password</label>
+                        <input
+                            type="password"
+                            class="form-control"
+                            id="password"
+                            placeholder="Password"
+                            required="true"
+                            min="8"
+                        />
+                        <div class="invalid-feedback">Please enter a password</div>
+                    </div>
 
-                <div class="checkbox mb-3">
-                    <label> <input type="checkbox" value="remember-me" /> Remember me </label>
-                </div>
-                <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-            </form>
+                    <div class="checkbox mb-3 ps-2">
+                        <label> <input type="checkbox" value="remember-me" /> Remember me </label>
+                    </div>
+                    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+                </form>
+            </div>
         </main>
-        <p>
-            The login page should have a form to login to the application. Ensure to include HTML form validation and
-            use /profile as the action attribute.
-        </p>
+        <script>
+            function handleForm() {
+                const form = document.querySelector('.requires-validation');
+                form.addEventListener(
+                    'submit',
+                    function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    },
+                    false
+                );
+            }
+            handleForm();
+        </script>
     </body>
 </html>
