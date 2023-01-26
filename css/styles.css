@@ -10787,4 +10787,23 @@ body {
   z-index: 2;
 }
 
+.navbar {
+  --bs-navbar-brand-color: rgb(255, 255, 255);
+  --bs-navbar-brand-hover-color: rgba(255, 255, 255, 0.9);
+  --bs-navbar-active-color: rgb(255, 255, 255);
+  --bs-navbar-color: rgba(255, 255, 255, 0.8);
+  --bs-navbar-hover-color: rgb(255, 255, 255);
+  --bs-navbar-disabled-color: rgba(255, 255, 255, 0.4);
+  --bs-navbar-brand-font-size: 1.75rem;
+  --bs-navbar-toggler-border-color: transparent;
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.95%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar .nav-link.active {
+  font-weight: 600;
+}
+
+.row > .card {
+  padding: 0;
+}
+
 /*# sourceMappingURL=styles.css.map */

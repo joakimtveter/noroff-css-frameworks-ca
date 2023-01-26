@@ -62,6 +62,6 @@ Please make sure to exclude `node_modules` by using a `.gitignore` file.
 ### Deploy the project
 
 1. Build the project with `npm run build`
-2. Craate a Pull request into the `main` branch
+2. Create a Pull request into the `main` branch
 
 Project auto deploys to TBD
