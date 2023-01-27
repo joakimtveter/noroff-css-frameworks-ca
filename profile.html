@@ -50,21 +50,33 @@
             </nav>
         </header>
         <main class="w-100 m-auto">
-            <section class="container">
-                <img
-                    src="https://api.dicebear.com/5.x/adventurer/svg"
-                    alt="Profile image"
-                    class="rounded-circle"
-                    width="200"
-                />
-                <h1 class="fs-1">My Profile</h1>
-                <p>
-                    The profile page should have a form to edit the user’s profile information, a list of the user’s
-                    contacts, and a form to add a new contact.
-                </p>
+            <section class="text-start">
+                <h1 class="fs-1 text-center">My Profile</h1>
+                <div class="container mb-4">
+                    <div class="d-flex justify-content-center gap-3">
+                        <img
+                            src="https://api.dicebear.com/5.x/adventurer/svg"
+                            alt="Profile image"
+                            class="rounded-circle"
+                            width="150"
+                            height="150"
+                        />
+                        <div>
+                            <p class="mb-0"><span class="fw-bold">Name:</span> John Doe</p>
+                            <p class="mb-0"><span class="fw-bold">Location:</span> Broklyn, NY, USA</p>
+                            <p class="mb-0"><span class="fw-bold">Interests:</span> Photography</p>
+                            <p class="mb-1">
+                                <span class="fw-bold text-black">Website:</span>
+                                <a href="https://example.com" class="text-black"> https://example.com</a>
+                            </p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quaerat natus harum?</p>
+                        </div>
+                    </div>
+                </div>
             </section>
+
             <section class="container mb-4">
-                <h2 class="h2">My friends</h2>
+                <h2 class="fs-2">My friends</h2>
 
                 <div class="row row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-8 gy-1 gy-lg-2">
                     <div class="px-1 px-lg-2">
@@ -164,7 +176,7 @@
             </section>
 
             <section class="container text-center px-3 my-2">
-                <h2 class="fs-1 mb-4">My recent posts</h2>
+                <h2 class="fs-2 mb-4">My recent posts</h2>
                 <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3 gy-3 gx-3">
                     <div class="px-md-1 px-lg-2">
                         <div class="card text-start">
