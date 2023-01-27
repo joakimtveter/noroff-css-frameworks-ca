@@ -58,6 +58,7 @@ Please make sure to exclude `node_modules` by using a `.gitignore` file.
 ### Run the project localy
 
 1. Start the project with `npm run dev`
+2. Serve the project with `npm run serve`
 
 ### Deploy the project
 
