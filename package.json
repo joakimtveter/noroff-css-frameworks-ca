@@ -2,10 +2,11 @@
     "name": "css-frameworks-ca",
     "version": "1.0.0",
     "description": "",
-    "main": "index.js",
+    "main": "index.html",
     "scripts": {
-        "build": "sass src/scss:dist/css",
-        "watch": "sass --watch src/scss:dist/css & live-server"
+        "build": "sass scss:css",
+        "dev": "sass --watch scss:css",
+        "serve": "live-server"
     },
     "repository": {
         "type": "git",
@@ -14,11 +15,8 @@
     "keywords": [],
     "author": "Joakim Tveter",
     "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/joakimtveter/noroff-css-frameworks-ca/issues"
-    },
-    "homepage": "https://github.com/joakimtveter/noroff-css-frameworks-ca#readme",
     "dependencies": {
+        "@popperjs/core": "^2.11.6",
         "bootstrap": "^5.2.3"
     },
     "devDependencies": {

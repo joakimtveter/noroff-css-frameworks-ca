@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login</title>
+        <link rel="stylesheet" href="./css/styles.css" />
+    </head>
+    <body class="bg-light d-flex align-items-center py-5">
+        <main class="form-signin m-auto w-100 px-1 py-5" style="max-width: 400px">
+            <div class="container">
+                <form method="get" action="/profile.html" class="requires-validation" novalidate>
+                    <h1 class="h3 mb-4 fw-normal text-center">Please sign in</h1>
+                    <div class="mb-1">
+                        <label for="email">Email address</label>
+                        <input
+                            type="email"
+                            class="form-control"
+                            id="email"
+                            placeholder="name@example.com"
+                            required="true"
+                        />
+                        <div class="invalid-feedback">Please enter a valid email</div>
+                    </div>
+                    <div class="mb-1">
+                        <label for="password">Password</label>
+                        <input
+                            type="password"
+                            class="form-control"
+                            id="password"
+                            placeholder="Password"
+                            required="true"
+                            min="8"
+                        />
+                        <div class="invalid-feedback">Please enter a password</div>
+                    </div>
+
+                    <div class="checkbox mb-3 ps-2">
+                        <label> <input type="checkbox" value="remember-me" /> Remember me </label>
+                    </div>
+                    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+                </form>
+            </div>
+        </main>
+        <script>
+            function handleForm() {
+                const form = document.querySelector('.requires-validation')
+                form.addEventListener(
+                    'submit',
+                    function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+                        form.classList.add('was-validated')
+                    },
+                    false
+                )
+            }
+            handleForm()
+        </script>
+    </body>
+</html>

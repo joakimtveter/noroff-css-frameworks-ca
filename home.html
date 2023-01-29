@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home | MyPlace - Your place on the internet</title>
+        <link rel="stylesheet" href="./css/styles.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.js" defer></script>
+    </head>
+    <body>
+        <header class="p-3 bg-primary">
+            <nav class="navbar navbar-expand-md bg-primary" data-bs-theme="dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="/home.html">MyPlace</a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarMenu"
+                        aria-controls="navbarMenu"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarMenu">
+                        <ul class="navbar-nav me-auto mb-2 mb-md-0 text-start">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/home.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/profile.html">Profile</a>
+                            </li>
+                        </ul>
+                        <div class="d-flex flex-column flex-sm-row">
+                            <form class="me-0 mb-1 mb-sm-0 me-sm-3" role="search">
+                                <input
+                                    class="form-control me-2"
+                                    type="search"
+                                    placeholder="Search"
+                                    aria-label="Search"
+                                />
+                            </form>
+                            <a class="btn btn-outline-light" href="/index.html">Log out</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="w-100 m-auto">
+            <h1>
+                <span class="visually-hidden">MyPlace - Your place on the internet</span>
+            </h1>
+            <div class="container mb-4">
+                <form class="col-lg-8 px-sm-5 py-sm-3 px-1 py-2 mx-auto mb-3 bg-light">
+                    <h2 class="fs-4">Create a post</h2>
+                    <div class="mb-3">
+                        <label for="imageUpload" class="form-label fw-bold">Upload Image</label>
+                        <input class="form-control mb-4" type="file" id="imageUpload" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="postTextArea" class="form-label fw-bold">Write your description</label>
+                        <textarea class="form-control" id="postTextArea" rows="3" style="resize: none"></textarea>
+                    </div>
+                    <button type="submit" class="d-block btn btn-primary ms-auto me-0">Submit post</button>
+                </form>
+            </div>
+            <section class="container text-center px-3 my-2">
+                <h2 class="fs-1 mb-4">My friends' posts</h2>
+                <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3 gy-3 gx-3">
+                    <div class="px-md-1 px-lg-2">
+                        <div class="card text-start">
+                            <div class="card-header d-flex px-3 py-2">
+                                <img
+                                    src="https://api.dicebear.com/5.x/adventurer/svg?seed=Angel"
+                                    alt=""
+                                    class="rounded-circle"
+                                    width="50"
+                                />
+                                <div class="px-3">
+                                    <p class="m-0 fs-5 fw-bold">Profile Name</p>
+                                    <p class="m-0 fs-6">3 hours ago</p>
+                                </div>
+                            </div>
+                            <div class="ratio ratio-1x1">
+                                <img src="/images/denice-alex-V8C7AvL6GLs-unsplash.jpg" alt="" />
+                            </div>
+                            <p class="card-text px-3 py-2 m-0">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, dolorum.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center px-3 py-2">
+                                <button class="btn btn-outline" aria-label="Like post">
+                                    <i class="bi bi-heart fs-4"></i>
+                                </button>
+                                <button class="btn fw-bold"><i class="bi bi-chat-left-fill"></i> 3 comments</button>
+                                <p class="m-0 fw-bold">6 Likes</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-md-1 px-lg-2">
+                        <div class="card text-start">
+                            <div class="card-header d-flex px-3 py-2">
+                                <img
+                                    src="https://api.dicebear.com/5.x/adventurer/svg?seed=Cookie"
+                                    alt=""
+                                    class="rounded-circle"
+                                    width="50"
+                                />
+                                <div class="px-3">
+                                    <p class="m-0 fs-5 fw-bold">Profile Name</p>
+                                    <p class="m-0 fs-6">3 hours ago</p>
+                                </div>
+                            </div>
+                            <div class="ratio ratio-1x1">
+                                <img src="/images/erik-adair-pTgj8jOydgI-unsplash.jpg" alt="" />
+                            </div>
+                            <p class="card-text px-3 py-2 m-0">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, dolorum.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center px-3 py-2">
+                                <button class="btn btn-outline" aria-label="Like post">
+                                    <i class="bi bi-heart fs-4"></i>
+                                </button>
+                                <button class="btn fw-bold"><i class="bi bi-chat-left-fill"></i> 3 comments</button>
+                                <p class="m-0 fw-bold">6 Likes</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-md-1 px-lg-2">
+                        <div class="card text-start">
+                            <div class="card-header d-flex px-3 py-2">
+                                <img
+                                    src="https://api.dicebear.com/5.x/adventurer/svg?seed=Abby"
+                                    alt=""
+                                    class="rounded-circle"
+                                    width="50"
+                                />
+                                <div class="px-3">
+                                    <p class="m-0 fs-5 fw-bold">Profile Name</p>
+                                    <p class="m-0 fs-6">3 hours ago</p>
+                                </div>
+                            </div>
+                            <div class="ratio ratio-1x1">
+                                <img src="/images/ismael-rodriguez-XjMrUsQtXxc-unsplash.jpg" alt="" />
+                            </div>
+                            <p class="card-text px-3 py-2 m-0">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, dolorum.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center px-3 py-2">
+                                <button class="btn btn-outline" aria-label="Like post">
+                                    <i class="bi bi-heart fs-4"></i>
+                                </button>
+                                <button class="btn fw-bold"><i class="bi bi-chat-left-fill"></i> 3 comments</button>
+                                <p class="m-0 fw-bold">6 Likes</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-md-1 px-lg-2">
+                        <div class="card text-start">
+                            <div class="card-header d-flex px-3 py-2">
+                                <img
+                                    src="https://api.dicebear.com/5.x/adventurer/svg?seed=Salem"
+                                    alt=""
+                                    class="rounded-circle"
+                                    width="50"
+                                />
+                                <div class="px-3">
+                                    <p class="m-0 fs-5 fw-bold">Profile Name</p>
+                                    <p class="m-0 fs-6">3 hours ago</p>
+                                </div>
+                            </div>
+                            <div class="ratio ratio-1x1">
+                                <img src="/images/marek-piwnicki-kWfNU_-FOt4-unsplash.jpg" alt="" />
+                            </div>
+                            <p class="card-text px-3 py-2 m-0">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, dolorum.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center px-3 py-2">
+                                <button class="btn btn-outline" aria-label="Like post">
+                                    <i class="bi bi-heart fs-4"></i>
+                                </button>
+                                <button class="btn fw-bold"><i class="bi bi-chat-left-fill"></i> 3 comments</button>
+                                <p class="m-0 fw-bold">6 Likes</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-md-1 px-lg-2">
+                        <div class="card text-start">
+                            <div class="card-header d-flex px-3 py-2">
+                                <img
+                                    src="https://api.dicebear.com/5.x/adventurer/svg?seed=Cookie"
+                                    alt=""
+                                    class="rounded-circle"
+                                    width="50"
+                                />
+                                <div class="px-3">
+                                    <p class="m-0 fs-5 fw-bold">Profile Name</p>
+                                    <p class="m-0 fs-6">3 hours ago</p>
+                                </div>
+                            </div>
+                            <div class="ratio ratio-1x1">
+                                <img src="/images/noelia-vega-7xjogMbVm_g-unsplash.jpg" alt="" />
+                            </div>
+                            <p class="card-text px-3 py-2 m-0">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, dolorum.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center px-3 py-2">
+                                <button class="btn btn-outline" aria-label="Like post">
+                                    <i class="bi bi-heart fs-4"></i>
+                                </button>
+                                <button class="btn fw-bold"><i class="bi bi-chat-left-fill"></i> 3 comments</button>
+                                <p class="m-0 fw-bold">6 Likes</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-md-1 px-lg-2">
+                        <div class="card text-start">
+                            <div class="card-header d-flex px-3 py-2">
+                                <img
+                                    src="https://api.dicebear.com/5.x/adventurer/svg?seed=Chester"
+                                    alt=""
+                                    class="rounded-circle"
+                                    width="50"
+                                />
+                                <div class="px-3">
+                                    <p class="m-0 fs-5 fw-bold">Profile Name</p>
+                                    <p class="m-0 fs-6">3 hours ago</p>
+                                </div>
+                            </div>
+                            <div class="ratio ratio-1x1">
+                                <img src="/images/radu-lin-XSzcycFv2JU-unsplash.jpg" alt="" />
+                            </div>
+                            <p class="card-text px-3 py-2 m-0">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, dolorum.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center px-3 py-2">
+                                <button class="btn btn-outline" aria-label="Like post">
+                                    <i class="bi bi-heart fs-4"></i>
+                                </button>
+                                <button class="btn fw-bold"><i class="bi bi-chat-left-fill"></i> 3 comments</button>
+                                <p class="m-0 fw-bold">6 Likes</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-md-1 px-lg-2">
+                        <div class="card text-start">
+                            <div class="card-header d-flex px-3 py-2">
+                                <img
+                                    src="https://api.dicebear.com/5.x/adventurer/svg?seed=Precious"
+                                    alt=""
+                                    class="rounded-circle"
+                                    width="50"
+                                />
+                                <div class="px-3">
+                                    <p class="m-0 fs-5 fw-bold">Profile Name</p>
+                                    <p class="m-0 fs-6">3 hours ago</p>
+                                </div>
+                            </div>
+                            <div class="ratio ratio-1x1">
+                                <img src="/images/sam-goodgame-EWjX2a1CUuY-unsplash.jpg" alt="" />
+                            </div>
+                            <p class="card-text px-3 py-2 m-0">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, dolorum.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center px-3 py-2">
+                                <button class="btn btn-outline" aria-label="Like post">
+                                    <i class="bi bi-heart fs-4"></i>
+                                </button>
+                                <button class="btn fw-bold"><i class="bi bi-chat-left-fill"></i> 3 comments</button>
+                                <p class="m-0 fw-bold">6 Likes</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-md-1 px-lg-2">
+                        <div class="card text-start">
+                            <div class="card-header d-flex px-3 py-2">
+                                <img
+                                    src="https://api.dicebear.com/5.x/adventurer/svg?seed=Chester"
+                                    alt=""
+                                    class="rounded-circle"
+                                    width="50"
+                                />
+                                <div class="px-3">
+                                    <p class="m-0 fs-5 fw-bold">Profile Name</p>
+                                    <p class="m-0 fs-6">3 hours ago</p>
+                                </div>
+                            </div>
+                            <div class="ratio ratio-1x1">
+                                <img src="/images/sam-goodgame-HzWy2qNulc8-unsplash.jpg" alt="" />
+                            </div>
+                            <p class="card-text px-3 py-2 m-0">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, dolorum.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center px-3 py-2">
+                                <button class="btn btn-outline" aria-label="Like post">
+                                    <i class="bi bi-heart fs-4"></i>
+                                </button>
+                                <button class="btn fw-bold"><i class="bi bi-chat-left-fill"></i> 3 comments</button>
+                                <p class="m-0 fw-bold">6 Likes</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-md-1 px-lg-2">
+                        <div class="card text-start">
+                            <div class="card-header d-flex px-3 py-2">
+                                <img
+                                    src="https://api.dicebear.com/5.x/adventurer/svg?seed=Angel"
+                                    alt=""
+                                    class="rounded-circle"
+                                    width="50"
+                                />
+                                <div class="px-3">
+                                    <p class="m-0 fs-5 fw-bold">Profile Name</p>
+                                    <p class="m-0 fs-6">3 hours ago</p>
+                                </div>
+                            </div>
+                            <div class="ratio ratio-1x1">
+                                <img src="/images/tobias-wilden-ZWeLtP4kQlA-unsplash.jpg" alt="" />
+                            </div>
+                            <p class="card-text px-3 py-2 m-0">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, dolorum.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center px-3 py-2">
+                                <button class="btn btn-outline" aria-label="Like post">
+                                    <i class="bi bi-heart fs-4"></i>
+                                </button>
+                                <button class="btn fw-bold"><i class="bi bi-chat-left-fill"></i> 3 comments</button>
+                                <p class="m-0 fw-bold">6 Likes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
