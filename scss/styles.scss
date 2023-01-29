@@ -10,15 +10,6 @@ body {
     accent-color: $primary;
 }
 
-.form-signin {
-    max-width: 450px;
-    padding: 15px;
-}
-
-.form-signin .form-floating:focus-within {
-    z-index: 2;
-}
-
 .navbar {
     --bs-navbar-brand-color: rgb(255, 255, 255);
     --bs-navbar-brand-hover-color: rgba(255, 255, 255, 0.9);

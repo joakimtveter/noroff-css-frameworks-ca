@@ -8,10 +8,10 @@
         <link rel="stylesheet" href="./css/styles.css" />
     </head>
     <body class="bg-light d-flex align-items-center py-5">
-        <main class="form-signin m-auto w-100">
+        <main class="form-signin m-auto w-100 px-1 py-5" style="max-width: 400px">
             <div class="container">
                 <form method="get" action="/profile.html" class="requires-validation" novalidate>
-                    <h1 class="h3 mb-3 fw-normal text-center">Please sign in</h1>
+                    <h1 class="h3 mb-4 fw-normal text-center">Please sign in</h1>
                     <div class="mb-1">
                         <label for="email">Email address</label>
                         <input
@@ -45,20 +45,20 @@
         </main>
         <script>
             function handleForm() {
-                const form = document.querySelector('.requires-validation');
+                const form = document.querySelector('.requires-validation')
                 form.addEventListener(
                     'submit',
                     function (event) {
                         if (!form.checkValidity()) {
-                            event.preventDefault();
-                            event.stopPropagation();
+                            event.preventDefault()
+                            event.stopPropagation()
                         }
-                        form.classList.add('was-validated');
+                        form.classList.add('was-validated')
                     },
                     false
-                );
+                )
             }
-            handleForm();
+            handleForm()
         </script>
     </body>
 </html>
